@@ -1,0 +1,30 @@
+<div ng-init="init()">
+  <div ng-include="'components/navbar/navbar.html'"></div>
+  <header class="hero-unit" id="banner">
+    <div class="container">
+      <img src="assets/images/slide1-bg.jpg" alt="Lets Go Shopping">
+    </div>
+  </header>
+  <div class="addItem">
+        <button class="btn btn-primary" ng-click="openModal()">Add Item</button>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h1 class="page-header">Shopping Items</h1>
+      <table class="table">
+        <tr class="repeat-animation" ng-repeat="item in shoppingList">
+          <td>
+            <a href="javascript:void(0)" ng-click="deleteItem(item._id,$index)" class="close">&times;</a>
+            <a href = "javascript:void(0)" ng-click = "openItem(item._id)" >{{::item.name}} - $&nbsp;{{::item.price}}</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <alert type="success" ng-repeat="alert in alerts" close="closeAlert()">{{alert.msg}}</alert>
+  <footer class="footer">
+    <div class="container">
+        <p>Example of Angular
+    </div>
+  </footer>
+</div>

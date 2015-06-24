@@ -1,0 +1,60 @@
+.thing-form {
+    margin: 20px 0;
+}
+
+#banner {
+    border-bottom: none;
+    margin-top: -20px;
+}
+
+#banner h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.hero-unit {
+    position: relative;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hero-unit .container img {
+    position: relative;
+    width: 110%;
+    margin-left:-57px;
+    overflow: hidden;
+}
+
+.addItem {
+    text-align:center;
+    margin-top:5px;
+}
+
+.alignRight {
+    float:right;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 70px;
+    border-top: 1px solid #E5E5E5;
+}
+
+.repeat-animation {
+  -webkit-transition:1s linear all;
+  transition:1s linear all;
+  position:relative;
+  left:50px;
+}
+.repeat-animation.ng-enter-stagger {
+  -webkit-transition-delay:0.5s;
+  transition-delay:0.5s;
+  -webkit-transition-duration:0;
+  transition-duration:0;
+}
+.repeat-animation.ng-enter { opacity:0; }
+.repeat-animation.left.ng-enter { left:0px; }
+.repeat-animation.right.ng-enter { left:100px; }
+.repeat-animation.ng-enter-active { opacity:1; left:50px; }
