@@ -1,8 +1,5 @@
 
-# customer-app
-
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.1.
+# Shopping List Example
 
 ## Build & development
 
@@ -12,3 +9,7 @@ Run `grunt` for building and `grunt serve` for preview.
 
 Running `grunt test` will run the unit tests with karma.
 # shoppingList
+
+** To run just the server
+
+Running the command 'npm start' will just run the server
